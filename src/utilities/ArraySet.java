@@ -12,4 +12,13 @@ public class ArraySet<E> implements Set<E>
 		_list = new ArrayList<E>();
 	}
 
+	public ArraySet(Collection<E> collection)
+	{
+		this();
+
+		for (E item : collection)
+		{
+			add(item);
+		}
+	}
 }
