@@ -1,11 +1,15 @@
 package utilities;
 
-public class ArraySet
+import java.util.ArrayList;
+import java.util.Set;
+
+public class ArraySet<E> implements Set<E>
 {
+	protected ArrayList<E> _list;
 
 	public ArraySet()
 	{
-		// TODO Auto-generated constructor stub
+		_list = new ArrayList<E>();
 	}
 
 }
